@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Community Stories &mdash; Hazara Times</title>
+<meta name="description" content="Personal stories, interviews, diaspora experiences and the cultural achievements of Hazara communities worldwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="date" id="today">Tuesday, June 2, 2026</span>
+    <div class="links"><a href="#">About</a><a href="#">Contributors</a><a href="#">Archive</a><a href="#">Contact</a></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="mark">H</span>
+      <span><span class="name">Hazara Times</span><span class="tag" data-i18n="tagline">History &bull; Culture &bull; Identity &bull; Heritage</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="history.html" data-i18n="nav_history">History</a>
+      <a href="culture.html" data-i18n="nav_culture">Culture</a>
+      <a href="arts.html" data-i18n="nav_arts">Arts &amp; Literature</a>
+      <a href="music.html" data-i18n="nav_music">Music</a>
+      <a href="bamyan.html" data-i18n="nav_bamyan">Bamyan</a>
+      <a href="food.html" data-i18n="nav_food">Food</a>
+      <a class="active" href="community.html" data-i18n="nav_community">Community</a>
+    </nav>
+    <div class="header-tools">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button class="active" data-lang="en" onclick="setLang('en')">EN</button>
+        <button data-lang="fa" onclick="setLang('fa')">&#1583;&#1585;&#1740;</button>
+      </div>
+      <button class="icon-btn" aria-label="Toggle dark mode" onclick="toggleTheme()"><span data-theme-icon>&#9790;</span></button>
+      <button class="icon-btn menu-toggle" aria-label="Menu" onclick="toggleDrawer()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <button class="close" onclick="toggleDrawer()" aria-label="Close">&times;</button>
+  <a href="index.html">Home</a>
+  <a href="history.html">History</a>
+  <a href="culture.html">Culture</a>
+  <a href="arts.html">Arts &amp; Literature</a>
+  <a href="music.html">Music &amp; Performance</a>
+  <a href="bamyan.html">Bamyan Heritage</a>
+  <a href="food.html">Food &amp; Cuisine</a>
+  <a href="community.html">Community Stories</a>
+</div>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Community Stories</span></div>
+    <h1>Community Stories</h1>
+    <p>Personal stories, interviews, diaspora experiences and the cultural achievements of Hazara communities worldwide.</p>
+  </div>
+</section>
+
+<section class="block wrap">
+  <div class="layout-2col">
+    <div>
+      <div class="toolbar">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="search" placeholder="Search stories&hellip;" aria-label="Search stories" oninput="searchCards(this.value)">
+        </div>
+      </div>
+      <div class="grid cols-2">
+        <a class="card" href="article.html" data-cat="all">
+          <div class="thumb"><span class="cat">Community</span><img src="https://picsum.photos/seed/diaspora-story/640/400" alt="Family portrait"></div>
+          <div class="body"><h3>Letters from Quetta: A Diaspora Community Builds a Library</h3><p>How one neighborhood turned exile into a project of cultural preservation.</p><div class="meta"><span>9 min</span></div></div>
+        </a>
+        <a class="card" href="article.html" data-cat="all">
+          <div class="thumb"><span class="cat">Community</span><img src="https://picsum.photos/seed/resilience/640/400" alt="Person reflecting"></div>
+          <div class="body"><h3>Personal Stories: Journeys of Resilience and Hope</h3><p>First-person accounts of migration, memory and belonging.</p><div class="meta"><span>8 min</span></div></div>
+        </a>
+        <a class="card" href="article.html" data-cat="all">
+          <div class="thumb"><span class="cat">Community</span><img src="https://picsum.photos/seed/interviews/640/400" alt="Interview setting"></div>
+          <div class="body"><h3>Interviews: Voices from the Diaspora</h3><p>Conversations with community members about identity and the future.</p><div class="meta"><span>7 min</span></div></div>
+        </a>
+        <a class="card" href="article.html" data-cat="all">
+          <div class="thumb"><span class="cat">Community</span><img src="https://picsum.photos/seed/achievements/640/400" alt="Achievement award"></div>
+          <div class="body"><h3>Cultural Achievements on the World Stage</h3><p>Celebrating Hazara success in arts, sport, science and public life.</p><div class="meta"><span>6 min</span></div></div>
+        </a>
+        <a class="card" href="article.html" data-cat="all">
+          <div class="thumb"><span class="cat">Community</span><img src="https://picsum.photos/seed/young-hazaras/640/400" alt="Young people"></div>
+          <div class="body"><h3>Young Hazaras Reclaiming Their Heritage</h3><p>A generation documenting, conserving and reimagining their culture.</p><div class="meta"><span>8 min</span></div></div>
+        </a>
+        <a class="card" href="article.html" data-cat="all">
+          <div class="thumb"><span class="cat">Community</span><img src="https://picsum.photos/seed/bridges/640/400" alt="Connected community"></div>
+          <div class="body"><h3>Building Bridges: Community Across Borders</h3><p>How dispersed communities stay connected and support one another.</p><div class="meta"><span>7 min</span></div></div>
+        </a>
+      </div>
+    </div>
+    <aside>
+      <div class="sidebar-card">
+        <h3>Trending Now</h3>
+        <ul class="trending-list">
+          <li><a href="article.html"><div><h4>The Empty Niches of Bamyan</h4><div class="m">Heritage &middot; 12 min</div></div></a></li>
+          <li><a href="article.html"><div><h4>Nowruz in the Highlands</h4><div class="m">Culture &middot; 9 min</div></div></a></li>
+          <li><a href="article.html"><div><h4>The Dambura's Two Strings</h4><div class="m">Music &middot; 7 min</div></div></a></li>
+          <li><a href="article.html"><div><h4>Mantu: The Dumpling at the Heart of Every Gathering</h4><div class="m">Food &middot; 6 min</div></div></a></li>
+          <li><a href="article.html"><div><h4>Who Are the Hazara?</h4><div class="m">History &middot; 14 min</div></div></a></li>
+        </ul>
+      </div>
+      <div class="sidebar-card" style="background:linear-gradient(135deg,var(--turquoise-deep),var(--deep-blue));color:#fff;border:none">
+        <h3 style="color:#fff">The Weekly Dispatch</h3>
+        <p style="color:#dbe6ec;font-size:15px">Long-form features and cultural stories, delivered every Friday.</p>
+        <form class="nl-form" style="flex-direction:column;margin-top:14px" onsubmit="return subscribe(event)">
+          <input type="email" placeholder="your@email.com" required aria-label="Email" style="margin-bottom:10px">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="name">Hazara Times</div>
+        <p>A digital magazine and cultural archive dedicated to preserving and celebrating the history, culture and heritage of the Hazara people.</p>
+      </div>
+      <div><h4>Sections</h4><a href="history.html">History</a><br><a href="culture.html">Culture</a><br><a href="arts.html">Arts &amp; Literature</a><br><a href="music.html">Music</a><br><a href="bamyan.html">Bamyan Heritage</a></div>
+      <div><h4>More</h4><a href="food.html">Food &amp; Cuisine</a><br><a href="community.html">Community</a><br><a href="bamyan.html">Opinion</a><br><a href="#">Archive</a></div>
+      <div><h4>About</h4><a href="#">Our Mission</a><br><a href="#">Contributors</a><br><a href="#">Submit a Story</a><br><a href="#">Contact</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Hazara Times. A cultural preservation initiative.</span>
+      <span>Made with care for heritage and history.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()"><span class="close" aria-label="Close">&times;</span><img src="" alt="Enlarged photograph"></div>
+<script src="app.js"></script>
+</body>
+</html>

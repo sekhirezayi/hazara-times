@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bamyan Heritage — Hazara Times</title>
+<meta name="description" content="Stories from the Bamyan valley: cultural landmarks, archaeology, heritage preservation, and an interactive timeline of central Afghanistan's highland history.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="date" id="today">Tuesday, June 2, 2026</span>
+    <div class="links"><a href="#">About</a><a href="#">Contributors</a><a href="#">Archive</a><a href="#">Contact</a></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="mark">H</span>
+      <span><span class="name">Hazara Times</span><span class="tag" data-i18n="tagline">History • Culture • Identity • Heritage</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="history.html" data-i18n="nav_history">History</a>
+      <a href="culture.html" data-i18n="nav_culture">Culture</a>
+      <a href="arts.html" data-i18n="nav_arts">Arts &amp; Literature</a>
+      <a href="music.html" data-i18n="nav_music">Music</a>
+      <a class="active" href="bamyan.html" data-i18n="nav_bamyan">Bamyan</a>
+      <a href="food.html" data-i18n="nav_food">Food</a>
+      <a href="community.html" data-i18n="nav_community">Community</a>
+    </nav>
+    <div class="header-tools">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button class="active" data-lang="en" onclick="setLang('en')">EN</button>
+        <button data-lang="fa" onclick="setLang('fa')">دری</button>
+      </div>
+      <button class="icon-btn" aria-label="Toggle dark mode" onclick="toggleTheme()"><span data-theme-icon>☾</span></button>
+      <button class="icon-btn menu-toggle" aria-label="Menu" onclick="toggleDrawer()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <button class="close" onclick="toggleDrawer()" aria-label="Close">×</button>
+  <a href="index.html">Home</a><a href="history.html">History</a><a href="culture.html">Culture</a>
+  <a href="arts.html">Arts &amp; Literature</a><a href="music.html">Music</a><a href="bamyan.html">Bamyan Heritage</a>
+  <a href="food.html">Food</a><a href="community.html">Community</a>
+</div>
+
+<!-- Page hero -->
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Bamyan Heritage</span></div>
+    <h1>Bamyan Heritage</h1>
+    <p>The valley at the heart of Hazarajat — its cultural landmarks, archaeology, and the people working to preserve a layered and extraordinary past.</p>
+  </div>
+</section>
+
+<section class="block wrap">
+  <div class="layout-2col">
+    <!-- main column -->
+    <div>
+      <!-- toolbar -->
+      <div class="toolbar">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="search" placeholder="Search stories…" aria-label="Search stories" oninput="searchCards(this.value)">
+        </div>
+        <div class="filters">
+          <button class="active" onclick="filterCards('all',this)">All</button>
+          <button onclick="filterCards('landmarks',this)">Landmarks</button>
+          <button onclick="filterCards('archaeology',this)">Archaeology</button>
+          <button onclick="filterCards('preservation',this)">Preservation</button>
+        </div>
+      </div>
+
+      <div class="grid cols-2">
+        <a class="card" href="article.html" data-cat="landmarks">
+          <div class="thumb"><span class="cat">Landmarks</span><img src="https://picsum.photos/seed/bamyan-cliffs/640/400" alt="Empty Buddha niche in the Bamyan cliff"></div>
+          <div class="body"><h3>The Empty Niches of Bamyan</h3><p>A valley that still remembers its Buddhas, and the people rewriting what heritage means.</p><div class="meta"><span>12 min</span><span>· Zahra Hussaini</span></div></div>
+        </a>
+        <a class="card" href="article.html" data-cat="landmarks">
+          <div class="thumb"><span class="cat">Landmarks</span><img src="https://picsum.photos/seed/band-e-amir/640/400" alt="Blue lakes of Band-e-Amir"></div>
+          <div class="body"><h3>Band-e-Amir: Afghanistan's First National Park</h3><p>Travertine dams hold back water of an almost impossible blue.</p><div class="meta"><span>5 min</span></div></div>
+        </a>
+        <a class="card" href="article.html" data-cat="archaeology">
+          <div class="thumb"><span class="cat">Archaeology</span><img src="https://picsum.photos/seed/shahr-e-gholghola/640/400" alt="Ruins of an ancient citadel"></div>
+          <div class="body"><h3>Shahr-e Gholghola: The "City of Screams"</h3><p>The silent citadel that fell to Genghis Khan still guards the valley.</p><div class="meta"><span>7 min</span></div></div>
+        </a>
+        <a class="card" href="article.html" data-cat="archaeology">
+          <div class="thumb"><span class="cat">Archaeology</span><img src="https://picsum.photos/seed/bamyan-niche-detail/640/400" alt="Cave murals in the cliff"></div>
+          <div class="body"><h3>The Cave Murals That Predate Europe's Oil Paintings</h3><p>Inside the sanctuaries, pigments tell a story of a Silk Road crossroads.</p><div class="meta"><span>9 min</span></div></div>
+        </a>
+        <a class="card" href="article.html" data-cat="preservation">
+          <div class="thumb"><span class="cat">Preservation</span><img src="https://picsum.photos/seed/conservation-work/640/400" alt="Conservators working on a wall"></div>
+          <div class="body"><h3>The Young Hazara Conservators Stabilising the Cliff</h3><p>A new generation trains to protect what remains of the valley's monuments.</p><div class="meta"><span>8 min</span></div></div>
+        </a>
+        <a class="card" href="article.html" data-cat="preservation">
+          <div class="thumb"><span class="cat">Preservation</span><img src="https://picsum.photos/seed/bamyan-valley-wide/640/400" alt="Bamyan valley landscape"></div>
+          <div class="body"><h3>Should the Buddhas Be Rebuilt? Inside a 20-Year Debate</h3><p>Anastylosis, the eloquent void, and the ethics of reconstruction.</p><div class="meta"><span>11 min</span></div></div>
+        </a>
+      </div>
+
+      <!-- Interactive timeline -->
+      <div style="margin-top:60px">
+        <div class="section-head"><div><div class="bar"></div><h2>An Interactive Timeline of Bamyan</h2></div></div>
+        <div class="timeline">
+          <div class="tl-item"><div class="yr">c. 250 BCE</div><h4>A Silk Road crossroads forms</h4><p>Bamyan grows into a trading and pilgrimage hub linking Persia, Central Asia and India.</p></div>
+          <div class="tl-item"><div class="yr">5th–7th c. CE</div><h4>The colossal Buddhas are carved</h4><p>Monks and craftsmen hew the two giant figures — 55m and 38m — into the sandstone cliff.</p></div>
+          <div class="tl-item"><div class="yr">c. 630 CE</div><h4>Xuanzang visits the valley</h4><p>The Chinese pilgrim records a thriving monastic community and a giant reclining Buddha.</p></div>
+          <div class="tl-item"><div class="yr">1221 CE</div><h4>Genghis Khan destroys Shahr-e Gholghola</h4><p>The Mongol siege gives the citadel its enduring name, the "City of Screams."</p></div>
+          <div class="tl-item"><div class="yr">March 2001</div><h4>The Buddhas are destroyed</h4><p>The statues are demolished with explosives, drawing global condemnation.</p></div>
+          <div class="tl-item"><div class="yr">2003</div><h4>UNESCO World Heritage inscription</h4><p>The valley is listed as World Heritage and simultaneously placed on the In-Danger list.</p></div>
+          <div class="tl-item"><div class="yr">2009</div><h4>Band-e-Amir becomes a national park</h4><p>Afghanistan designates its first national park around the valley's cobalt lakes.</p></div>
+          <div class="tl-item"><div class="yr">Today</div><h4>Heritage as a living practice</h4><p>A new generation documents, conserves and reimagines the valley's future.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sidebar -->
+    <aside>
+      <div class="sidebar-card">
+        <h3>Trending Now</h3>
+        <ul class="trending-list">
+          <li><a href="article.html"><div><h4>The Empty Niches of Bamyan</h4><div class="m">Heritage · 12 min</div></div></a></li>
+          <li><a href="article.html"><div><h4>Nowruz in the Highlands</h4><div class="m">Culture · 9 min</div></div></a></li>
+          <li><a href="article.html"><div><h4>The Dambura's Two Strings</h4><div class="m">Music · 7 min</div></div></a></li>
+          <li><a href="article.html"><div><h4>Mantu: The Dumpling at the Heart of Every Gathering</h4><div class="m">Food · 6 min</div></div></a></li>
+          <li><a href="article.html"><div><h4>Who Are the Hazara?</h4><div class="m">History · 14 min</div></div></a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card" style="background:linear-gradient(135deg,var(--turquoise-deep),var(--deep-blue));color:#fff;border:none">
+        <h3 style="color:#fff">Visiting Bamyan</h3>
+        <p style="color:#dbe6ec;font-size:15px">Key sites in the valley: the Buddha niches, Shahr-e Gholghola, Shahr-e Zohak ("Red City"), and the lakes of Band-e-Amir, a short drive west.</p>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Quick Facts</h3>
+        <p style="font-size:15px;color:var(--text-soft)">
+          <strong>Elevation:</strong> ~2,500 m<br>
+          <strong>Region:</strong> Hazarajat, central Afghanistan<br>
+          <strong>Larger Buddha:</strong> ~55 m tall<br>
+          <strong>UNESCO listing:</strong> 2003<br>
+          <strong>National park:</strong> Band-e-Amir, 2009
+        </p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="block newsletter">
+  <div class="wrap">
+    <h2>The Weekly Dispatch</h2>
+    <p>Long-form features, archive finds and cultural stories — delivered to your inbox every Friday.</p>
+    <form class="nl-form" onsubmit="return subscribe(event)">
+      <input type="email" placeholder="your@email.com" required aria-label="Email address">
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="name">Hazara Times</div>
+        <p>A digital magazine and cultural archive dedicated to preserving and celebrating the history, culture and heritage of the Hazara people.</p>
+      </div>
+      <div><h4>Sections</h4><a href="history.html">History</a><br><a href="culture.html">Culture</a><br><a href="arts.html">Arts &amp; Literature</a><br><a href="music.html">Music</a></div>
+      <div><h4>More</h4><a href="food.html">Food &amp; Cuisine</a><br><a href="community.html">Community</a><br><a href="bamyan.html">Opinion</a><br><a href="#">Archive</a></div>
+      <div><h4>About</h4><a href="#">Our Mission</a><br><a href="#">Contributors</a><br><a href="#">Submit a Story</a><br><a href="#">Contact</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Hazara Times. A cultural preservation initiative.</span>
+      <span>Made with care for heritage and history.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

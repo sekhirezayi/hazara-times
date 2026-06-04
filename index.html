@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hazara Times — History, Culture, Identity & Heritage</title>
+<meta name="description" content="Hazara Times is the leading digital magazine dedicated to preserving and celebrating Hazara history, culture, art, literature, music, cuisine and heritage.">
+<meta name="keywords" content="Hazara, Hazarajat, Bamyan, Afghanistan, culture, history, Nowruz, Hazaragi, heritage">
+<meta property="og:title" content="Hazara Times — History, Culture, Identity & Heritage">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== Top bar ===== -->
+<div class="topbar">
+  <div class="wrap">
+    <span class="date" id="today">Tuesday, June 2, 2026</span>
+    <div class="links">
+      <a href="#">About</a><a href="#">Contributors</a><a href="#">Archive</a><a href="#">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="mark">H</span>
+      <span>
+        <span class="name">Hazara Times</span>
+        <span class="tag" data-i18n="tagline">History • Culture • Identity • Heritage</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a class="active" href="index.html" data-i18n="nav_home">Home</a>
+      <a href="history.html" data-i18n="nav_history">History</a>
+      <a href="culture.html" data-i18n="nav_culture">Culture</a>
+      <a href="arts.html" data-i18n="nav_arts">Arts &amp; Literature</a>
+      <a href="music.html" data-i18n="nav_music">Music</a>
+      <a href="bamyan.html" data-i18n="nav_bamyan">Bamyan</a>
+      <a href="food.html" data-i18n="nav_food">Food</a>
+      <a href="community.html" data-i18n="nav_community">Community</a>
+    </nav>
+    <div class="header-tools">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button class="active" data-lang="en" onclick="setLang('en')">EN</button>
+        <button data-lang="fa" onclick="setLang('fa')">دری</button>
+      </div>
+      <button class="icon-btn" aria-label="Search" onclick="document.getElementById('searchq').focus()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Toggle dark mode" onclick="toggleTheme()"><span data-theme-icon>☾</span></button>
+      <button class="icon-btn menu-toggle" aria-label="Menu" onclick="toggleDrawer()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile drawer -->
+<div class="drawer" id="drawer">
+  <button class="close" onclick="toggleDrawer()" aria-label="Close">×</button>
+  <a href="index.html">Home</a>
+  <a href="history.html">History</a>
+  <a href="culture.html">Culture</a>
+  <a href="arts.html">Arts &amp; Literature</a>
+  <a href="music.html">Music &amp; Performance</a>
+  <a href="bamyan.html">Bamyan Heritage</a>
+  <a href="food.html">Food &amp; Cuisine</a>
+  <a href="community.html">Community Stories</a>
+</div>
+
+<!-- ===== Hero slider ===== -->
+<section class="hero">
+  <div class="slider" aria-roledescription="carousel">
+    <div class="slide active">
+      <div class="bg" style="background-image:url('https://picsum.photos/seed/bamyan-cliffs/1700/950')"></div>
+      <div class="scrim"></div>
+      <div class="content"><div class="inner">
+        <span class="chip">Bamyan Heritage</span>
+        <h1>The Empty Niches of Bamyan: A Valley That Still Remembers Its Buddhas</h1>
+        <p>For fifteen centuries the great statues watched over the valley. Two decades after their destruction, the people of Bamyan are rewriting what heritage means.</p>
+        <div class="meta"><span>By Zahra Hussaini</span><span>· 12 min read</span><span>· Heritage</span></div>
+      </div></div>
+    </div>
+    <div class="slide">
+      <div class="bg" style="background-image:url('https://picsum.photos/seed/nowruz-spring/1700/950')"></div>
+      <div class="scrim"></div>
+      <div class="content"><div class="inner">
+        <span class="chip">Culture</span>
+        <h1>Nowruz in the Highlands: How the Hazara Welcome the New Year</h1>
+        <p>From the sprouting of samanak to the songs of spring, Nowruz turns the mountains of Hazarajat into a festival of renewal.</p>
+        <div class="meta"><span>By Ali Reza Sarwari</span><span>· 9 min read</span><span>· Culture</span></div>
+      </div></div>
+    </div>
+    <div class="slide">
+      <div class="bg" style="background-image:url('https://picsum.photos/seed/dambora-music/1700/950')"></div>
+      <div class="scrim"></div>
+      <div class="content"><div class="inner">
+        <span class="chip">Music</span>
+        <h1>The Dambura's Two Strings: The Sound That Carries Hazara Memory</h1>
+        <p>A simple lute, two strings, and a thousand stories. Inside the living tradition of Hazaragi folk music.</p>
+        <div class="meta"><span>By Sakina Yaqubi</span><span>· 7 min read</span><span>· Music</span></div>
+      </div></div>
+    </div>
+    <button class="slider-arrow prev" aria-label="Previous slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg></button>
+    <button class="slider-arrow next" aria-label="Next slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg></button>
+    <div class="slider-dots" role="tablist" aria-label="Slides"></div>
+  </div>
+</section>
+
+<!-- ===== Breaking / featured ===== -->
+<section class="block wrap">
+  <div class="section-head">
+    <div><div class="bar"></div><h2>Featured Stories</h2></div>
+    <a class="section-link" href="bamyan.html">All features →</a>
+  </div>
+  <div class="feature-split">
+    <a class="feature-lead reveal" href="article.html">
+      <div class="bg" style="background-image:url('https://picsum.photos/seed/hazarajat-land/1100/900')"></div>
+      <div class="scrim"></div>
+      <div class="content">
+        <span class="chip">History</span>
+        <h3>Who Are the Hazara? Tracing the Roots of a Highland People</h3>
+        <p>Genetics, language and oral history weave a complex story of a people at the crossroads of Central Asia.</p>
+        <div class="meta" style="margin-top:14px;font-size:13px;color:#cfd8e0">By Dr. Mohammad Jawad · 14 min read</div>
+      </div>
+    </a>
+    <div class="feature-side">
+      <a class="side-item reveal" href="article.html">
+        <div class="si-thumb"><img src="https://picsum.photos/seed/mantu-food/300/300" alt="Plate of Hazaragi mantu dumplings"></div>
+        <div><h4>Mantu: The Dumpling at the Heart of Every Gathering</h4><div class="meta">Food &amp; Cuisine · 6 min</div></div>
+      </a>
+      <a class="side-item reveal" href="article.html">
+        <div class="si-thumb"><img src="https://picsum.photos/seed/calligraphy-art/300/300" alt="Persian calligraphy on parchment"></div>
+        <div><h4>The Quiet Revival of Hazaragi Poetry in the Diaspora</h4><div class="meta">Arts &amp; Literature · 8 min</div></div>
+      </a>
+      <a class="side-item reveal" href="article.html">
+        <div class="si-thumb"><img src="https://picsum.photos/seed/wedding-textile/300/300" alt="Embroidered traditional textile"></div>
+        <div><h4>Threads of Identity: Reading a Hazara Wedding Through Its Clothes</h4><div class="meta">Culture · 7 min</div></div>
+      </a>
+      <a class="side-item reveal" href="article.html">
+        <div class="si-thumb"><img src="https://picsum.photos/seed/band-e-amir/300/300" alt="Blue lakes of Band-e-Amir"></div>
+        <div><h4>Band-e-Amir: Afghanistan's First National Park</h4><div class="meta">Heritage · 5 min</div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Latest articles ===== -->
+<section class="block" style="background:var(--bg-muted)">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="bar"></div><h2>Latest Articles</h2></div>
+      <a class="section-link" href="bamyan.html">Browse all →</a>
+    </div>
+    <div class="grid cols-3">
+      <a class="card reveal" href="article.html">
+        <div class="thumb"><span class="cat">History</span><img src="https://picsum.photos/seed/oral-history/640/400" alt="Elder telling stories"></div>
+        <div class="body"><h3>The Oral Historians Keeping a Stateless History Alive</h3>
+        <p>Before the written record, there were the storytellers. Meet the keepers of Hazara collective memory.</p>
+        <div class="meta"><span>Sept 28</span><span>· 10 min</span></div></div>
+      </a>
+      <a class="card reveal" href="article.html">
+        <div class="thumb"><span class="cat">Culture</span><img src="https://picsum.photos/seed/nowruz-table/640/400" alt="Haft-seen table for Nowruz"></div>
+        <div class="body"><h3>Samanak Nights: The All-Female Ritual Behind a Nowruz Sweet</h3>
+        <p>An ancient wheat pudding becomes an occasion for song, solidarity and storytelling.</p>
+        <div class="meta"><span>Sept 24</span><span>· 6 min</span></div></div>
+      </a>
+      <a class="card reveal" href="article.html">
+        <div class="thumb"><span class="cat">Arts</span><img src="https://picsum.photos/seed/contemporary-artist/640/400" alt="Contemporary painter at work"></div>
+        <div class="body"><h3>A New Generation of Hazara Artists Paints Its Own Story</h3>
+        <p>From Kabul to Melbourne, young artists confront memory, displacement and identity.</p>
+        <div class="meta"><span>Sept 20</span><span>· 8 min</span></div></div>
+      </a>
+      <a class="card reveal" href="article.html">
+        <div class="thumb"><span class="cat">Food</span><img src="https://picsum.photos/seed/ashak-dish/640/400" alt="Ashak leek dumplings"></div>
+        <div class="body"><h3>Ashak: The Spring Dumpling Filled with Wild Leeks</h3>
+        <p>A dish that tastes of the highland thaw — and a recipe passed hand to hand.</p>
+        <div class="meta"><span>Sept 17</span><span>· 5 min</span></div></div>
+      </a>
+      <a class="card reveal" href="article.html">
+        <div class="thumb"><span class="cat">Community</span><img src="https://picsum.photos/seed/diaspora-story/640/400" alt="Family portrait in diaspora"></div>
+        <div class="body"><h3>Letters from Quetta: A Diaspora Community Builds a Library</h3>
+        <p>How one neighborhood turned exile into a project of cultural preservation.</p>
+        <div class="meta"><span>Sept 13</span><span>· 9 min</span></div></div>
+      </a>
+      <a class="card reveal" href="article.html">
+        <div class="thumb"><span class="cat">Heritage</span><img src="https://picsum.photos/seed/shahr-e-gholghola/640/400" alt="Ruins of an ancient citadel"></div>
+        <div class="body"><h3>Shahr-e Gholghola: The "City of Screams" Above Bamyan</h3>
+        <p>The silent ruins of a citadel that fell to Genghis Khan still guard the valley.</p>
+        <div class="meta"><span>Sept 9</span><span>· 7 min</span></div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Popular topics ===== -->
+<section class="block topics">
+  <div class="wrap">
+    <div class="section-head"><div><div class="bar"></div><h2>Explore Topics</h2></div></div>
+    <div class="topic-grid">
+      <a class="topic" href="history.html"><div class="ic">📜</div><div class="t">History</div><div class="c">142 stories</div></a>
+      <a class="topic" href="culture.html"><div class="ic">🎎</div><div class="t">Culture</div><div class="c">98 stories</div></a>
+      <a class="topic" href="arts.html"><div class="ic">🎨</div><div class="t">Art</div><div class="c">63 stories</div></a>
+      <a class="topic" href="bamyan.html"><div class="ic">📖</div><div class="t">Literature</div><div class="c">57 stories</div></a>
+      <a class="topic" href="music.html"><div class="ic">🎵</div><div class="t">Music</div><div class="c">41 stories</div></a>
+      <a class="topic" href="bamyan.html"><div class="ic">🏛️</div><div class="t">Heritage</div><div class="c">76 stories</div></a>
+      <a class="topic" href="community.html"><div class="ic">🤝</div><div class="t">Community</div><div class="c">88 stories</div></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Featured photography ===== -->
+<section class="block wrap">
+  <div class="section-head">
+    <div><div class="bar"></div><h2>Featured Photography</h2></div>
+    <a class="section-link" href="#">Open gallery →</a>
+  </div>
+  <div class="gallery">
+    <figure class="wide tall" onclick="openLightbox('https://picsum.photos/seed/photo-valley/1400/1000')"><img src="https://picsum.photos/seed/photo-valley/800/800" alt="Bamyan valley at dawn"><figcaption>Dawn over the Bamyan valley</figcaption></figure>
+    <figure onclick="openLightbox('https://picsum.photos/seed/photo-elder/1000/1000')"><img src="https://picsum.photos/seed/photo-elder/500/400" alt="Portrait of a Hazara elder"><figcaption>An elder in Daikundi</figcaption></figure>
+    <figure onclick="openLightbox('https://picsum.photos/seed/photo-children/1000/1000')"><img src="https://picsum.photos/seed/photo-children/500/400" alt="Children playing in the highlands"><figcaption>Highland childhood</figcaption></figure>
+    <figure class="wide" onclick="openLightbox('https://picsum.photos/seed/photo-market/1400/700')"><img src="https://picsum.photos/seed/photo-market/800/400" alt="A busy local market"><figcaption>Market day in the highlands</figcaption></figure>
+    <figure onclick="openLightbox('https://picsum.photos/seed/photo-weaver/1000/1000')"><img src="https://picsum.photos/seed/photo-weaver/500/400" alt="A weaver at a loom"><figcaption>The weaver's hands</figcaption></figure>
+    <figure onclick="openLightbox('https://picsum.photos/seed/photo-snow/1000/1000')"><img src="https://picsum.photos/seed/photo-snow/500/400" alt="Snow-covered mountain village"><figcaption>Winter in Hazarajat</figcaption></figure>
+  </div>
+</section>
+
+<!-- ===== Newsletter ===== -->
+<section class="block newsletter">
+  <div class="wrap">
+    <h2>The Weekly Dispatch</h2>
+    <p>Long-form features, archive finds and cultural stories — delivered to your inbox every Friday.</p>
+    <form class="nl-form" onsubmit="return subscribe(event)">
+      <input type="email" placeholder="your@email.com" required aria-label="Email address">
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="name">Hazara Times</div>
+        <p>A digital magazine and cultural archive dedicated to preserving and celebrating the history, culture and heritage of the Hazara people.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.300c-1.2 0-1.6.8-1.6 1.6V12H17l-.4 2.9h-2.1v7A10 10 0 0 0 22 12z"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h3l-7 8 8 12h-6l-5-7-5 7H3l8-9L3 2h6l4 6 5-6z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.4-.4-5a2.6 2.6 0 0 0-1.8-1.8C19 5 12 5 12 5s-7 0-8.8.5A2.6 2.6 0 0 0 1.4 7C1 8.6 1 12 1 12s0 3.4.4 5a2.6 2.6 0 0 0 1.8 1.8C5 19 12 19 12 19s7 0 8.8-.5a2.6 2.6 0 0 0 1.8-1.8c.4-1.6.4-5 .4-5zM10 15V9l5 3z"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Sections</h4><a href="history.html">History</a><br><a href="culture.html">Culture</a><br><a href="arts.html">Arts &amp; Literature</a><br><a href="music.html">Music</a><br><a href="bamyan.html">Bamyan Heritage</a></div>
+      <div><h4>More</h4><a href="food.html">Food &amp; Cuisine</a><br><a href="community.html">Community</a><br><a href="bamyan.html">Opinion</a><br><a href="#">Photography</a><br><a href="#">Archive</a></div>
+      <div><h4>About</h4><a href="#">Our Mission</a><br><a href="#">Contributors</a><br><a href="#">Submit a Story</a><br><a href="#">Contact</a><br><a href="#">Privacy</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Hazara Times. A cultural preservation initiative.</span>
+      <span>Made with care for heritage and history.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="close" aria-label="Close">×</span>
+  <img src="" alt="Enlarged photograph">
+</div>
+
+<!-- search field (hidden helper for header search button focus) -->
+<input id="searchq" style="position:absolute;left:-9999px" oninput="" aria-hidden="true">
+
+<script src="app.js"></script>
+</body>
+</html>
