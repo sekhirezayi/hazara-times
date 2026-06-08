@@ -15,7 +15,7 @@
 <div class="topbar">
   <div class="wrap">
     <span class="date" id="today">Tuesday, June 2, 2026</span>
-    <div class="links"><a href="#">About</a><a href="#">Contributors</a><a href="#">Archive</a><a href="#">Contact</a></div>
+    <div class="links"><a href="#" data-fa="درباره">About</a><a href="#" data-fa="نویسندگان">Contributors</a><a href="#" data-fa="آرشیو">Archive</a><a href="#" data-fa="تماس">Contact</a></div>
   </div>
 </div>
 
@@ -50,21 +50,21 @@
 
 <div class="drawer" id="drawer">
   <button class="close" onclick="toggleDrawer()" aria-label="Close">&times;</button>
-  <a href="index.html">Home</a>
-  <a href="history.html">History</a>
-  <a href="culture.html">Culture</a>
-  <a href="arts.html">Arts &amp; Literature</a>
-  <a href="music.html">Music &amp; Performance</a>
-  <a href="bamyan.html">Bamyan Heritage</a>
-  <a href="food.html">Food &amp; Cuisine</a>
-  <a href="community.html">Community Stories</a>
+  <a href="index.html" data-fa="خانه">Home</a>
+  <a href="history.html" data-fa="تاریخ">History</a>
+  <a href="culture.html" data-fa="فرهنگ">Culture</a>
+  <a href="arts.html" data-fa="هنر و ادبیات">Arts &amp; Literature</a>
+  <a href="music.html" data-fa="موسیقی و اجرا">Music &amp; Performance</a>
+  <a href="bamyan.html" data-fa="میراث بامیان">Bamyan Heritage</a>
+  <a href="food.html" data-fa="غذا و آشپزی">Food &amp; Cuisine</a>
+  <a href="community.html" data-fa="داستان‌های جامعه">Community Stories</a>
 </div>
 
 <section class="page-hero">
   <div class="wrap">
-    <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>History</span></div>
-    <h1>The History of the Hazara</h1>
-    <p>Origins, historical events, the homeland of Hazarajat, and the figures who shaped a highland people.</p>
+    <div class="breadcrumb"><a href="index.html" data-fa="خانه">Home</a> <span>/</span> <span data-fa="تاریخ">History</span></div>
+    <h1 data-fa="تاریخ هزاره">The History of the Hazara</h1>
+    <p data-fa="ریشه‌ها، رویدادهای تاریخی، سرزمین هزارستان و چهره‌هایی که یک قوم کوهستانی را شکل دادند.">Origins, historical events, the homeland of Hazarajat, and the figures who shaped a highland people.</p>
   </div>
 </section>
 
@@ -74,53 +74,53 @@
       <div class="toolbar">
         <div class="search-box">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-          <input type="search" placeholder="Search stories&hellip;" aria-label="Search stories" oninput="searchCards(this.value)">
+          <input type="search" placeholder="Search stories&hellip;" data-fa-ph="جست‌وجوی داستان‌ها…" aria-label="Search stories" oninput="searchCards(this.value)">
         </div>
       </div>
       <div class="grid cols-2">
         <a class="card" href="article.html" data-cat="all">
-          <div class="thumb"><span class="cat">History</span><img src="https://picsum.photos/seed/hazarajat-land/640/400" alt="Highland landscape"></div>
-          <div class="body"><h3>Who Are the Hazara? Tracing the Roots of a Highland People</h3><p>Genetics, language and oral history weave a complex story of a people at the crossroads of Central Asia.</p><div class="meta"><span>14 min</span></div></div>
+          <div class="thumb"><span class="cat" data-fa="تاریخ">History</span><img src="images/hazarajat-land.jpg" alt="Highland landscape"></div>
+          <div class="body"><h3 data-fa="هزاره‌ها کیستند؟ ردیابی ریشه‌های یک قوم کوهستانی">Who Are the Hazara? Tracing the Roots of a Highland People</h3><p data-fa="ژنتیک، زبان و تاریخ شفاهی داستان پیچیده‌ی قومی را در چهارراه آسیای میانه می‌بافند.">Genetics, language and oral history weave a complex story of a people at the crossroads of Central Asia.</p><div class="meta"><span data-fa="۱۴ دقیقه">14 min</span></div></div>
         </a>
         <a class="card" href="article.html" data-cat="all">
-          <div class="thumb"><span class="cat">History</span><img src="https://picsum.photos/seed/hazarajat-geo/640/400" alt="Mountain valley"></div>
-          <div class="body"><h3>Hazarajat: The Geography That Shaped a People</h3><p>How the central highlands forged a distinct identity, economy and way of life.</p><div class="meta"><span>8 min</span></div></div>
+          <div class="thumb"><span class="cat" data-fa="تاریخ">History</span><img src="images/hazarajat-geo.jpg" alt="Mountain valley"></div>
+          <div class="body"><h3 data-fa="هزارستان: جغرافیایی که یک قوم را شکل داد">Hazarajat: The Geography That Shaped a People</h3><p data-fa="چگونه ارتفاعات مرکزی هویت، اقتصاد و شیوه‌ی زندگیِ متمایزی پدید آورد.">How the central highlands forged a distinct identity, economy and way of life.</p><div class="meta"><span data-fa="۸ دقیقه">8 min</span></div></div>
         </a>
         <a class="card" href="article.html" data-cat="all">
-          <div class="thumb"><span class="cat">History</span><img src="https://picsum.photos/seed/oral-history/640/400" alt="Elder storyteller"></div>
-          <div class="body"><h3>The Oral Historians Keeping a Stateless History Alive</h3><p>Before the written record there were the storytellers. Meet the keepers of collective memory.</p><div class="meta"><span>10 min</span></div></div>
+          <div class="thumb"><span class="cat" data-fa="تاریخ">History</span><img src="images/oral-history.jpg" alt="Elder storyteller"></div>
+          <div class="body"><h3 data-fa="تاریخ‌نگاران شفاهی که تاریخی بی‌دولت را زنده نگه می‌دارند">The Oral Historians Keeping a Stateless History Alive</h3><p data-fa="پیش از ثبت مکتوب، قصه‌گویان بودند. با نگهبانان حافظه‌ی جمعی آشنا شوید.">Before the written record there were the storytellers. Meet the keepers of collective memory.</p><div class="meta"><span data-fa="۱۰ دقیقه">10 min</span></div></div>
         </a>
         <a class="card" href="article.html" data-cat="all">
-          <div class="thumb"><span class="cat">History</span><img src="https://picsum.photos/seed/historical-figures/640/400" alt="Archival portrait"></div>
-          <div class="body"><h3>Historical Figures: Leaders, Poets and Reformers</h3><p>Profiles of the men and women who left their mark on Hazara history.</p><div class="meta"><span>9 min</span></div></div>
+          <div class="thumb"><span class="cat" data-fa="تاریخ">History</span><img src="images/historical-figures.jpg" alt="Archival portrait"></div>
+          <div class="body"><h3 data-fa="چهره‌های تاریخی: رهبران، شاعران و اصلاح‌گران">Historical Figures: Leaders, Poets and Reformers</h3><p data-fa="نگاهی به مردان و زنانی که بر تاریخ هزاره اثر گذاشتند.">Profiles of the men and women who left their mark on Hazara history.</p><div class="meta"><span data-fa="۹ دقیقه">9 min</span></div></div>
         </a>
         <a class="card" href="article.html" data-cat="all">
-          <div class="thumb"><span class="cat">History</span><img src="https://picsum.photos/seed/silk-road-evo/640/400" alt="Old trade route"></div>
-          <div class="body"><h3>From the Silk Road to Today: A Cultural Evolution</h3><p>Centuries of trade, migration and exchange that shaped a living culture.</p><div class="meta"><span>11 min</span></div></div>
+          <div class="thumb"><span class="cat" data-fa="تاریخ">History</span><img src="images/silk-road-evo.jpg" alt="Old trade route"></div>
+          <div class="body"><h3 data-fa="از جاده‌ی ابریشم تا امروز: یک تحول فرهنگی">From the Silk Road to Today: A Cultural Evolution</h3><p data-fa="قرن‌ها تجارت، مهاجرت و داد‌وستد که فرهنگی زنده را شکل داد.">Centuries of trade, migration and exchange that shaped a living culture.</p><div class="meta"><span data-fa="۱۱ دقیقه">11 min</span></div></div>
         </a>
         <a class="card" href="article.html" data-cat="all">
-          <div class="thumb"><span class="cat">History</span><img src="https://picsum.photos/seed/shahr-e-gholghola/640/400" alt="Citadel ruins"></div>
-          <div class="body"><h3>Shahr-e Gholghola: The City of Screams</h3><p>The silent citadel that fell to Genghis Khan still guards the valley.</p><div class="meta"><span>7 min</span></div></div>
+          <div class="thumb"><span class="cat" data-fa="تاریخ">History</span><img src="images/shahr-e-gholghola.jpg" alt="Citadel ruins"></div>
+          <div class="body"><h3 data-fa="شهر غلغله: شهر فریادها">Shahr-e Gholghola: The City of Screams</h3><p data-fa="دژ خاموشی که به دست چنگیزخان سقوط کرد، هنوز نگهبان دره است.">The silent citadel that fell to Genghis Khan still guards the valley.</p><div class="meta"><span data-fa="۷ دقیقه">7 min</span></div></div>
         </a>
       </div>
     </div>
     <aside>
       <div class="sidebar-card">
-        <h3>Trending Now</h3>
+        <h3 data-fa="پرطرفدار اکنون">Trending Now</h3>
         <ul class="trending-list">
-          <li><a href="article.html"><div><h4>The Empty Niches of Bamyan</h4><div class="m">Heritage &middot; 12 min</div></div></a></li>
-          <li><a href="article.html"><div><h4>Nowruz in the Highlands</h4><div class="m">Culture &middot; 9 min</div></div></a></li>
-          <li><a href="article.html"><div><h4>The Dambura's Two Strings</h4><div class="m">Music &middot; 7 min</div></div></a></li>
-          <li><a href="article.html"><div><h4>Mantu: The Dumpling at the Heart of Every Gathering</h4><div class="m">Food &middot; 6 min</div></div></a></li>
-          <li><a href="article.html"><div><h4>Who Are the Hazara?</h4><div class="m">History &middot; 14 min</div></div></a></li>
+          <li><a href="article.html"><div><h4 data-fa="نیچ‌های خالی بامیان">The Empty Niches of Bamyan</h4><div class="m" data-fa="میراث · ۱۲ دقیقه">Heritage &middot; 12 min</div></div></a></li>
+          <li><a href="article.html"><div><h4 data-fa="نوروز در ارتفاعات">Nowruz in the Highlands</h4><div class="m" data-fa="فرهنگ · ۹ دقیقه">Culture &middot; 9 min</div></div></a></li>
+          <li><a href="article.html"><div><h4 data-fa="دو تار دمبوره">The Dambura's Two Strings</h4><div class="m" data-fa="موسیقی · ۷ دقیقه">Music &middot; 7 min</div></div></a></li>
+          <li><a href="article.html"><div><h4 data-fa="منتو: آشِ خمیریِ قلبِ هر گردهمایی">Mantu: The Dumpling at the Heart of Every Gathering</h4><div class="m" data-fa="غذا · ۶ دقیقه">Food &middot; 6 min</div></div></a></li>
+          <li><a href="article.html"><div><h4 data-fa="هزاره‌ها کیستند؟">Who Are the Hazara?</h4><div class="m" data-fa="تاریخ · ۱۴ دقیقه">History &middot; 14 min</div></div></a></li>
         </ul>
       </div>
       <div class="sidebar-card" style="background:linear-gradient(135deg,var(--turquoise-deep),var(--deep-blue));color:#fff;border:none">
-        <h3 style="color:#fff">The Weekly Dispatch</h3>
-        <p style="color:#dbe6ec;font-size:15px">Long-form features and cultural stories, delivered every Friday.</p>
+        <h3 style="color:#fff" data-fa="خبرنامه‌ی هفتگی">The Weekly Dispatch</h3>
+        <p style="color:#dbe6ec;font-size:15px" data-fa="مقاله‌های بلند و داستان‌های فرهنگی، هر جمعه.">Long-form features and cultural stories, delivered every Friday.</p>
         <form class="nl-form" style="flex-direction:column;margin-top:14px" onsubmit="return subscribe(event)">
-          <input type="email" placeholder="your@email.com" required aria-label="Email" style="margin-bottom:10px">
-          <button type="submit">Subscribe</button>
+          <input type="email" placeholder="your@email.com" data-fa-ph="ایمیل شما" required aria-label="Email" style="margin-bottom:10px">
+          <button type="submit" data-fa="عضویت">Subscribe</button>
         </form>
       </div>
     </aside>
@@ -132,15 +132,15 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="name">Hazara Times</div>
-        <p>A digital magazine and cultural archive dedicated to preserving and celebrating the history, culture and heritage of the Hazara people.</p>
+        <p data-fa="مجله‌ای دیجیتال و آرشیوی فرهنگی، وقفِ حفظ و گرامیداشتِ تاریخ، فرهنگ و میراث مردم هزاره.">A digital magazine and cultural archive dedicated to preserving and celebrating the history, culture and heritage of the Hazara people.</p>
       </div>
-      <div><h4>Sections</h4><a href="history.html">History</a><br><a href="culture.html">Culture</a><br><a href="arts.html">Arts &amp; Literature</a><br><a href="music.html">Music</a><br><a href="bamyan.html">Bamyan Heritage</a></div>
-      <div><h4>More</h4><a href="food.html">Food &amp; Cuisine</a><br><a href="community.html">Community</a><br><a href="bamyan.html">Opinion</a><br><a href="#">Archive</a></div>
-      <div><h4>About</h4><a href="#">Our Mission</a><br><a href="#">Contributors</a><br><a href="#">Submit a Story</a><br><a href="#">Contact</a></div>
+      <div><h4 data-fa="بخش‌ها">Sections</h4><a href="history.html" data-fa="تاریخ">History</a><br><a href="culture.html" data-fa="فرهنگ">Culture</a><br><a href="arts.html" data-fa="هنر و ادبیات">Arts &amp; Literature</a><br><a href="music.html" data-fa="موسیقی">Music</a><br><a href="bamyan.html" data-fa="میراث بامیان">Bamyan Heritage</a></div>
+      <div><h4 data-fa="بیشتر">More</h4><a href="food.html" data-fa="غذا و آشپزی">Food &amp; Cuisine</a><br><a href="community.html" data-fa="جامعه">Community</a><br><a href="bamyan.html" data-fa="دیدگاه">Opinion</a><br><a href="#" data-fa="آرشیو">Archive</a></div>
+      <div><h4 data-fa="درباره">About</h4><a href="#" data-fa="مأموریت ما">Our Mission</a><br><a href="#" data-fa="نویسندگان">Contributors</a><br><a href="#" data-fa="ارسال داستان">Submit a Story</a><br><a href="#" data-fa="تماس">Contact</a></div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 Hazara Times. A cultural preservation initiative.</span>
-      <span>Made with care for heritage and history.</span>
+      <span data-fa="© ۲۰۲۶ هزاره تایمز. ابتکاری برای حفظ فرهنگ.">&copy; 2026 Hazara Times. A cultural preservation initiative.</span>
+      <span data-fa="ساخته‌شده با مهر برای میراث و تاریخ.">Made with care for heritage and history.</span>
     </div>
   </div>
 </footer>

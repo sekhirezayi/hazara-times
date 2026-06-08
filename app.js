@@ -55,6 +55,16 @@
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
       var k = el.getAttribute("data-i18n"); if (d[k]) el.textContent = d[k];
     });
+    /* Per-element translations: each element carries its own Dari text in
+       data-fa. The English original is captured once into data-en. */
+    document.querySelectorAll("[data-fa]").forEach(function (el) {
+      if (!el.hasAttribute("data-en")) el.setAttribute("data-en", el.textContent);
+      el.textContent = (lang === "fa") ? el.getAttribute("data-fa") : el.getAttribute("data-en");
+    });
+    document.querySelectorAll("[data-fa-ph]").forEach(function (el) {
+      if (!el.hasAttribute("data-en-ph")) el.setAttribute("data-en-ph", el.getAttribute("placeholder") || "");
+      el.setAttribute("placeholder", (lang === "fa") ? el.getAttribute("data-fa-ph") : el.getAttribute("data-en-ph"));
+    });
     document.querySelectorAll(".lang-switch button").forEach(function (b) {
       b.classList.toggle("active", b.getAttribute("data-lang") === lang);
     });

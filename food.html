@@ -15,7 +15,7 @@
 <div class="topbar">
   <div class="wrap">
     <span class="date" id="today">Tuesday, June 2, 2026</span>
-    <div class="links"><a href="#">About</a><a href="#">Contributors</a><a href="#">Archive</a><a href="#">Contact</a></div>
+    <div class="links"><a href="#" data-fa="درباره">About</a><a href="#" data-fa="نویسندگان">Contributors</a><a href="#" data-fa="آرشیو">Archive</a><a href="#" data-fa="تماس">Contact</a></div>
   </div>
 </div>
 
@@ -50,21 +50,21 @@
 
 <div class="drawer" id="drawer">
   <button class="close" onclick="toggleDrawer()" aria-label="Close">&times;</button>
-  <a href="index.html">Home</a>
-  <a href="history.html">History</a>
-  <a href="culture.html">Culture</a>
-  <a href="arts.html">Arts &amp; Literature</a>
-  <a href="music.html">Music &amp; Performance</a>
-  <a href="bamyan.html">Bamyan Heritage</a>
-  <a href="food.html">Food &amp; Cuisine</a>
-  <a href="community.html">Community Stories</a>
+  <a href="index.html" data-fa="خانه">Home</a>
+  <a href="history.html" data-fa="تاریخ">History</a>
+  <a href="culture.html" data-fa="فرهنگ">Culture</a>
+  <a href="arts.html" data-fa="هنر و ادبیات">Arts &amp; Literature</a>
+  <a href="music.html" data-fa="موسیقی و اجرا">Music &amp; Performance</a>
+  <a href="bamyan.html" data-fa="میراث بامیان">Bamyan Heritage</a>
+  <a href="food.html" data-fa="غذا و آشپزی">Food &amp; Cuisine</a>
+  <a href="community.html" data-fa="داستان‌های جامعه">Community Stories</a>
 </div>
 
 <section class="page-hero">
   <div class="wrap">
-    <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Food & Cuisine</span></div>
-    <h1>Food & Cuisine</h1>
-    <p>Mantu, ashak, bolani and the dishes at the heart of Hazara hospitality, with their stories and recipes.</p>
+    <div class="breadcrumb"><a href="index.html" data-fa="خانه">Home</a> <span>/</span> <span data-fa="غذا و آشپزی">Food & Cuisine</span></div>
+    <h1 data-fa="غذا و آشپزی">Food & Cuisine</h1>
+    <p data-fa="منتو، آشک، بولانی و غذاهایی در قلب مهمان‌نوازی هزاره، همراه با داستان‌ها و دستورهای پختشان.">Mantu, ashak, bolani and the dishes at the heart of Hazara hospitality, with their stories and recipes.</p>
   </div>
 </section>
 
@@ -74,53 +74,53 @@
       <div class="toolbar">
         <div class="search-box">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-          <input type="search" placeholder="Search stories&hellip;" aria-label="Search stories" oninput="searchCards(this.value)">
+          <input type="search" placeholder="Search stories&hellip;" data-fa-ph="جست‌وجوی داستان‌ها…" aria-label="Search stories" oninput="searchCards(this.value)">
         </div>
       </div>
       <div class="grid cols-2">
         <a class="card" href="article.html" data-cat="all">
-          <div class="thumb"><span class="cat">Food</span><img src="https://picsum.photos/seed/mantu-food/640/400" alt="Plate of mantu"></div>
-          <div class="body"><h3>Mantu: The Dumpling at the Heart of Every Gathering</h3><p>Cultural background, photography and a step-by-step recipe for the beloved steamed dumpling.</p><div class="meta"><span>6 min</span></div></div>
+          <div class="thumb"><span class="cat" data-fa="غذا">Food</span><img src="images/mantu-food.jpg" alt="Plate of mantu"></div>
+          <div class="body"><h3 data-fa="منتو: آشِ خمیریِ قلبِ هر گردهمایی">Mantu: The Dumpling at the Heart of Every Gathering</h3><p data-fa="پیشینه‌ی فرهنگی، عکاسی و دستوری گام‌به‌گام برای این آشِ خمیریِ بخارپزِ محبوب.">Cultural background, photography and a step-by-step recipe for the beloved steamed dumpling.</p><div class="meta"><span data-fa="۶ دقیقه">6 min</span></div></div>
         </a>
         <a class="card" href="article.html" data-cat="all">
-          <div class="thumb"><span class="cat">Food</span><img src="https://picsum.photos/seed/ashak-dish/640/400" alt="Ashak dumplings"></div>
-          <div class="body"><h3>Ashak: The Spring Dumpling Filled with Wild Leeks</h3><p>A dish that tastes of the highland thaw, with a recipe passed hand to hand.</p><div class="meta"><span>5 min</span></div></div>
+          <div class="thumb"><span class="cat" data-fa="غذا">Food</span><img src="images/ashak-dish.jpg" alt="Ashak dumplings"></div>
+          <div class="body"><h3 data-fa="آشک: آشِ خمیریِ بهاری پر از تره‌ی کوهی">Ashak: The Spring Dumpling Filled with Wild Leeks</h3><p data-fa="غذایی با طعمِ ذوبِ برفِ ارتفاعات، با دستوری که دست‌به‌دست رسیده است.">A dish that tastes of the highland thaw, with a recipe passed hand to hand.</p><div class="meta"><span data-fa="۵ دقیقه">5 min</span></div></div>
         </a>
         <a class="card" href="article.html" data-cat="all">
-          <div class="thumb"><span class="cat">Food</span><img src="https://picsum.photos/seed/bolani-bread/640/400" alt="Bolani flatbread"></div>
-          <div class="body"><h3>Bolani: The Stuffed Flatbread of Celebration</h3><p>Crisp, savory and endlessly shareable, the snack that defines a gathering.</p><div class="meta"><span>5 min</span></div></div>
+          <div class="thumb"><span class="cat" data-fa="غذا">Food</span><img src="images/bolani-bread.jpg" alt="Bolani flatbread"></div>
+          <div class="body"><h3 data-fa="بولانی: نانِ پرشده‌ی جشن">Bolani: The Stuffed Flatbread of Celebration</h3><p data-fa="ترد، خوش‌طعم و همیشه قابل‌تقسیم؛ خوراکی که معرّفِ یک گردهمایی است.">Crisp, savory and endlessly shareable, the snack that defines a gathering.</p><div class="meta"><span data-fa="۵ دقیقه">5 min</span></div></div>
         </a>
         <a class="card" href="article.html" data-cat="all">
-          <div class="thumb"><span class="cat">Food</span><img src="https://picsum.photos/seed/qabili-plate/640/400" alt="Rice platter"></div>
-          <div class="body"><h3>Qabili and the Art of the Shared Plate</h3><p>Rice, raisins and carrots, and the meaning of eating together.</p><div class="meta"><span>7 min</span></div></div>
+          <div class="thumb"><span class="cat" data-fa="غذا">Food</span><img src="images/qabili-plate.jpg" alt="Rice platter"></div>
+          <div class="body"><h3 data-fa="قابلی و هنرِ بشقابِ مشترک">Qabili and the Art of the Shared Plate</h3><p data-fa="برنج، کشمش و زردک، و معنای باهم‌خوردن.">Rice, raisins and carrots, and the meaning of eating together.</p><div class="meta"><span data-fa="۷ دقیقه">7 min</span></div></div>
         </a>
         <a class="card" href="article.html" data-cat="all">
-          <div class="thumb"><span class="cat">Food</span><img src="https://picsum.photos/seed/qurut-dairy/640/400" alt="Dairy product"></div>
-          <div class="body"><h3>Highland Dairy: Qurut and the Flavors of the Mountains</h3><p>The dried yogurt that flavors highland cooking, and how it is made.</p><div class="meta"><span>6 min</span></div></div>
+          <div class="thumb"><span class="cat" data-fa="غذا">Food</span><img src="images/qurut-dairy.jpg" alt="Dairy product"></div>
+          <div class="body"><h3 data-fa="لبنیات ارتفاعات: قروت و طعم‌های کوهستان">Highland Dairy: Qurut and the Flavors of the Mountains</h3><p data-fa="ماستِ خشکی که به آشپزی کوهستان طعم می‌دهد و چگونگی ساختش.">The dried yogurt that flavors highland cooking, and how it is made.</p><div class="meta"><span data-fa="۶ دقیقه">6 min</span></div></div>
         </a>
         <a class="card" href="article.html" data-cat="all">
-          <div class="thumb"><span class="cat">Food</span><img src="https://picsum.photos/seed/tea-culture/640/400" alt="Cup of tea"></div>
-          <div class="body"><h3>Tea Culture: The Endless Pot of Hazara Hospitality</h3><p>Why no visit is complete without tea, and the rituals around it.</p><div class="meta"><span>5 min</span></div></div>
+          <div class="thumb"><span class="cat" data-fa="غذا">Food</span><img src="images/tea-culture.jpg" alt="Cup of tea"></div>
+          <div class="body"><h3 data-fa="فرهنگ چای: قوریِ بی‌پایانِ مهمان‌نوازی هزاره">Tea Culture: The Endless Pot of Hazara Hospitality</h3><p data-fa="چرا هیچ دیداری بدون چای کامل نیست و آیین‌های پیرامون آن.">Why no visit is complete without tea, and the rituals around it.</p><div class="meta"><span data-fa="۵ دقیقه">5 min</span></div></div>
         </a>
       </div>
     </div>
     <aside>
       <div class="sidebar-card">
-        <h3>Trending Now</h3>
+        <h3 data-fa="پرطرفدار اکنون">Trending Now</h3>
         <ul class="trending-list">
-          <li><a href="article.html"><div><h4>The Empty Niches of Bamyan</h4><div class="m">Heritage &middot; 12 min</div></div></a></li>
-          <li><a href="article.html"><div><h4>Nowruz in the Highlands</h4><div class="m">Culture &middot; 9 min</div></div></a></li>
-          <li><a href="article.html"><div><h4>The Dambura's Two Strings</h4><div class="m">Music &middot; 7 min</div></div></a></li>
-          <li><a href="article.html"><div><h4>Mantu: The Dumpling at the Heart of Every Gathering</h4><div class="m">Food &middot; 6 min</div></div></a></li>
-          <li><a href="article.html"><div><h4>Who Are the Hazara?</h4><div class="m">History &middot; 14 min</div></div></a></li>
+          <li><a href="article.html"><div><h4 data-fa="نیچ‌های خالی بامیان">The Empty Niches of Bamyan</h4><div class="m" data-fa="میراث · ۱۲ دقیقه">Heritage &middot; 12 min</div></div></a></li>
+          <li><a href="article.html"><div><h4 data-fa="نوروز در ارتفاعات">Nowruz in the Highlands</h4><div class="m" data-fa="فرهنگ · ۹ دقیقه">Culture &middot; 9 min</div></div></a></li>
+          <li><a href="article.html"><div><h4 data-fa="دو تار دمبوره">The Dambura's Two Strings</h4><div class="m" data-fa="موسیقی · ۷ دقیقه">Music &middot; 7 min</div></div></a></li>
+          <li><a href="article.html"><div><h4 data-fa="منتو: آشِ خمیریِ قلبِ هر گردهمایی">Mantu: The Dumpling at the Heart of Every Gathering</h4><div class="m" data-fa="غذا · ۶ دقیقه">Food &middot; 6 min</div></div></a></li>
+          <li><a href="article.html"><div><h4 data-fa="هزاره‌ها کیستند؟">Who Are the Hazara?</h4><div class="m" data-fa="تاریخ · ۱۴ دقیقه">History &middot; 14 min</div></div></a></li>
         </ul>
       </div>
       <div class="sidebar-card" style="background:linear-gradient(135deg,var(--turquoise-deep),var(--deep-blue));color:#fff;border:none">
-        <h3 style="color:#fff">The Weekly Dispatch</h3>
-        <p style="color:#dbe6ec;font-size:15px">Long-form features and cultural stories, delivered every Friday.</p>
+        <h3 style="color:#fff" data-fa="خبرنامه‌ی هفتگی">The Weekly Dispatch</h3>
+        <p style="color:#dbe6ec;font-size:15px" data-fa="مقاله‌های بلند و داستان‌های فرهنگی، هر جمعه.">Long-form features and cultural stories, delivered every Friday.</p>
         <form class="nl-form" style="flex-direction:column;margin-top:14px" onsubmit="return subscribe(event)">
-          <input type="email" placeholder="your@email.com" required aria-label="Email" style="margin-bottom:10px">
-          <button type="submit">Subscribe</button>
+          <input type="email" placeholder="your@email.com" data-fa-ph="ایمیل شما" required aria-label="Email" style="margin-bottom:10px">
+          <button type="submit" data-fa="عضویت">Subscribe</button>
         </form>
       </div>
     </aside>
@@ -132,15 +132,15 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="name">Hazara Times</div>
-        <p>A digital magazine and cultural archive dedicated to preserving and celebrating the history, culture and heritage of the Hazara people.</p>
+        <p data-fa="مجله‌ای دیجیتال و آرشیوی فرهنگی، وقفِ حفظ و گرامیداشتِ تاریخ، فرهنگ و میراث مردم هزاره.">A digital magazine and cultural archive dedicated to preserving and celebrating the history, culture and heritage of the Hazara people.</p>
       </div>
-      <div><h4>Sections</h4><a href="history.html">History</a><br><a href="culture.html">Culture</a><br><a href="arts.html">Arts &amp; Literature</a><br><a href="music.html">Music</a><br><a href="bamyan.html">Bamyan Heritage</a></div>
-      <div><h4>More</h4><a href="food.html">Food &amp; Cuisine</a><br><a href="community.html">Community</a><br><a href="bamyan.html">Opinion</a><br><a href="#">Archive</a></div>
-      <div><h4>About</h4><a href="#">Our Mission</a><br><a href="#">Contributors</a><br><a href="#">Submit a Story</a><br><a href="#">Contact</a></div>
+      <div><h4 data-fa="بخش‌ها">Sections</h4><a href="history.html" data-fa="تاریخ">History</a><br><a href="culture.html" data-fa="فرهنگ">Culture</a><br><a href="arts.html" data-fa="هنر و ادبیات">Arts &amp; Literature</a><br><a href="music.html" data-fa="موسیقی">Music</a><br><a href="bamyan.html" data-fa="میراث بامیان">Bamyan Heritage</a></div>
+      <div><h4 data-fa="بیشتر">More</h4><a href="food.html" data-fa="غذا و آشپزی">Food &amp; Cuisine</a><br><a href="community.html" data-fa="جامعه">Community</a><br><a href="bamyan.html" data-fa="دیدگاه">Opinion</a><br><a href="#" data-fa="آرشیو">Archive</a></div>
+      <div><h4 data-fa="درباره">About</h4><a href="#" data-fa="مأموریت ما">Our Mission</a><br><a href="#" data-fa="نویسندگان">Contributors</a><br><a href="#" data-fa="ارسال داستان">Submit a Story</a><br><a href="#" data-fa="تماس">Contact</a></div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 Hazara Times. A cultural preservation initiative.</span>
-      <span>Made with care for heritage and history.</span>
+      <span data-fa="© ۲۰۲۶ هزاره تایمز. ابتکاری برای حفظ فرهنگ.">&copy; 2026 Hazara Times. A cultural preservation initiative.</span>
+      <span data-fa="ساخته‌شده با مهر برای میراث و تاریخ.">Made with care for heritage and history.</span>
     </div>
   </div>
 </footer>

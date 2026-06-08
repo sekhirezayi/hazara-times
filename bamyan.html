@@ -15,7 +15,7 @@
 <div class="topbar">
   <div class="wrap">
     <span class="date" id="today">Tuesday, June 2, 2026</span>
-    <div class="links"><a href="#">About</a><a href="#">Contributors</a><a href="#">Archive</a><a href="#">Contact</a></div>
+    <div class="links"><a href="#" data-fa="درباره">About</a><a href="#" data-fa="نویسندگان">Contributors</a><a href="#" data-fa="آرشیو">Archive</a><a href="#" data-fa="تماس">Contact</a></div>
   </div>
 </div>
 
@@ -50,17 +50,17 @@
 
 <div class="drawer" id="drawer">
   <button class="close" onclick="toggleDrawer()" aria-label="Close">×</button>
-  <a href="index.html">Home</a><a href="history.html">History</a><a href="culture.html">Culture</a>
-  <a href="arts.html">Arts &amp; Literature</a><a href="music.html">Music</a><a href="bamyan.html">Bamyan Heritage</a>
-  <a href="food.html">Food</a><a href="community.html">Community</a>
+  <a href="index.html" data-fa="خانه">Home</a><a href="history.html" data-fa="تاریخ">History</a><a href="culture.html" data-fa="فرهنگ">Culture</a>
+  <a href="arts.html" data-fa="هنر و ادبیات">Arts &amp; Literature</a><a href="music.html" data-fa="موسیقی">Music</a><a href="bamyan.html" data-fa="میراث بامیان">Bamyan Heritage</a>
+  <a href="food.html" data-fa="غذا">Food</a><a href="community.html" data-fa="جامعه">Community</a>
 </div>
 
 <!-- Page hero -->
 <section class="page-hero">
   <div class="wrap">
-    <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Bamyan Heritage</span></div>
-    <h1>Bamyan Heritage</h1>
-    <p>The valley at the heart of Hazarajat — its cultural landmarks, archaeology, and the people working to preserve a layered and extraordinary past.</p>
+    <div class="breadcrumb"><a href="index.html" data-fa="خانه">Home</a> <span>/</span> <span data-fa="میراث بامیان">Bamyan Heritage</span></div>
+    <h1 data-fa="میراث بامیان">Bamyan Heritage</h1>
+    <p data-fa="دره‌ای در قلب هزارستان — بناهای فرهنگی، باستان‌شناسی و مردمانی که برای حفظ گذشته‌ای لایه‌لایه و شگفت‌انگیز می‌کوشند.">The valley at the heart of Hazarajat — its cultural landmarks, archaeology, and the people working to preserve a layered and extraordinary past.</p>
   </div>
 </section>
 
@@ -72,55 +72,55 @@
       <div class="toolbar">
         <div class="search-box">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-          <input type="search" placeholder="Search stories…" aria-label="Search stories" oninput="searchCards(this.value)">
+          <input type="search" placeholder="Search stories…" data-fa-ph="جست‌وجوی داستان‌ها…" aria-label="Search stories" oninput="searchCards(this.value)">
         </div>
         <div class="filters">
-          <button class="active" onclick="filterCards('all',this)">All</button>
-          <button onclick="filterCards('landmarks',this)">Landmarks</button>
-          <button onclick="filterCards('archaeology',this)">Archaeology</button>
-          <button onclick="filterCards('preservation',this)">Preservation</button>
+          <button class="active" onclick="filterCards('all',this)" data-fa="همه">All</button>
+          <button onclick="filterCards('landmarks',this)" data-fa="بناها">Landmarks</button>
+          <button onclick="filterCards('archaeology',this)" data-fa="باستان‌شناسی">Archaeology</button>
+          <button onclick="filterCards('preservation',this)" data-fa="حفاظت">Preservation</button>
         </div>
       </div>
 
       <div class="grid cols-2">
         <a class="card" href="article.html" data-cat="landmarks">
-          <div class="thumb"><span class="cat">Landmarks</span><img src="https://picsum.photos/seed/bamyan-cliffs/640/400" alt="Empty Buddha niche in the Bamyan cliff"></div>
-          <div class="body"><h3>The Empty Niches of Bamyan</h3><p>A valley that still remembers its Buddhas, and the people rewriting what heritage means.</p><div class="meta"><span>12 min</span><span>· Zahra Hussaini</span></div></div>
+          <div class="thumb"><span class="cat" data-fa="بناها">Landmarks</span><img src="images/bamyan-cliffs.jpg" alt="Empty Buddha niche in the Bamyan cliff"></div>
+          <div class="body"><h3 data-fa="نیچ‌های خالی بامیان">The Empty Niches of Bamyan</h3><p data-fa="دره‌ای که هنوز بوداهایش را به یاد دارد، و مردمانی که معنای میراث را از نو می‌نویسند.">A valley that still remembers its Buddhas, and the people rewriting what heritage means.</p><div class="meta"><span data-fa="۱۲ دقیقه">12 min</span><span data-fa="· زهرا حسینی">· Zahra Hussaini</span></div></div>
         </a>
         <a class="card" href="article.html" data-cat="landmarks">
-          <div class="thumb"><span class="cat">Landmarks</span><img src="https://picsum.photos/seed/band-e-amir/640/400" alt="Blue lakes of Band-e-Amir"></div>
-          <div class="body"><h3>Band-e-Amir: Afghanistan's First National Park</h3><p>Travertine dams hold back water of an almost impossible blue.</p><div class="meta"><span>5 min</span></div></div>
+          <div class="thumb"><span class="cat">Landmarks</span><img src="images/band-e-amir.jpg" alt="Blue lakes of Band-e-Amir"></div>
+          <div class="body"><h3 data-fa="بند امیر: نخستین پارک ملی افغانستان">Band-e-Amir: Afghanistan's First National Park</h3><p data-fa="سدهای تراورتنی آبی را نگه می‌دارند که آبی‌اش تقریباً باورنکردنی است.">Travertine dams hold back water of an almost impossible blue.</p><div class="meta"><span data-fa="۵ دقیقه">5 min</span></div></div>
         </a>
         <a class="card" href="article.html" data-cat="archaeology">
-          <div class="thumb"><span class="cat">Archaeology</span><img src="https://picsum.photos/seed/shahr-e-gholghola/640/400" alt="Ruins of an ancient citadel"></div>
-          <div class="body"><h3>Shahr-e Gholghola: The "City of Screams"</h3><p>The silent citadel that fell to Genghis Khan still guards the valley.</p><div class="meta"><span>7 min</span></div></div>
+          <div class="thumb"><span class="cat" data-fa="باستان‌شناسی">Archaeology</span><img src="images/shahr-e-gholghola.jpg" alt="Ruins of an ancient citadel"></div>
+          <div class="body"><h3 data-fa="شهر غلغله: «شهر فریادها»">Shahr-e Gholghola: The "City of Screams"</h3><p data-fa="دژ خاموشی که به دست چنگیزخان سقوط کرد، هنوز نگهبان دره است.">The silent citadel that fell to Genghis Khan still guards the valley.</p><div class="meta"><span data-fa="۷ دقیقه">7 min</span></div></div>
         </a>
         <a class="card" href="article.html" data-cat="archaeology">
-          <div class="thumb"><span class="cat">Archaeology</span><img src="https://picsum.photos/seed/bamyan-niche-detail/640/400" alt="Cave murals in the cliff"></div>
-          <div class="body"><h3>The Cave Murals That Predate Europe's Oil Paintings</h3><p>Inside the sanctuaries, pigments tell a story of a Silk Road crossroads.</p><div class="meta"><span>9 min</span></div></div>
+          <div class="thumb"><span class="cat">Archaeology</span><img src="images/bamyan-niche-detail.jpg" alt="Cave murals in the cliff"></div>
+          <div class="body"><h3 data-fa="نقاشی‌های دیواری غارها که از نقاشی‌های رنگ‌روغنِ اروپا کهن‌ترند">The Cave Murals That Predate Europe's Oil Paintings</h3><p data-fa="درون نیایشگاه‌ها، رنگ‌دانه‌ها داستانِ چهارراهِ جاده‌ی ابریشم را روایت می‌کنند.">Inside the sanctuaries, pigments tell a story of a Silk Road crossroads.</p><div class="meta"><span data-fa="۹ دقیقه">9 min</span></div></div>
         </a>
         <a class="card" href="article.html" data-cat="preservation">
-          <div class="thumb"><span class="cat">Preservation</span><img src="https://picsum.photos/seed/conservation-work/640/400" alt="Conservators working on a wall"></div>
-          <div class="body"><h3>The Young Hazara Conservators Stabilising the Cliff</h3><p>A new generation trains to protect what remains of the valley's monuments.</p><div class="meta"><span>8 min</span></div></div>
+          <div class="thumb"><span class="cat" data-fa="حفاظت">Preservation</span><img src="images/conservation-work.jpg" alt="Conservators working on a wall"></div>
+          <div class="body"><h3 data-fa="حافظان جوان هزاره که صخره را پایدار می‌کنند">The Young Hazara Conservators Stabilising the Cliff</h3><p data-fa="نسلی نو آموزش می‌بیند تا از آنچه از بناهای دره مانده محافظت کند.">A new generation trains to protect what remains of the valley's monuments.</p><div class="meta"><span data-fa="۸ دقیقه">8 min</span></div></div>
         </a>
         <a class="card" href="article.html" data-cat="preservation">
-          <div class="thumb"><span class="cat">Preservation</span><img src="https://picsum.photos/seed/bamyan-valley-wide/640/400" alt="Bamyan valley landscape"></div>
-          <div class="body"><h3>Should the Buddhas Be Rebuilt? Inside a 20-Year Debate</h3><p>Anastylosis, the eloquent void, and the ethics of reconstruction.</p><div class="meta"><span>11 min</span></div></div>
+          <div class="thumb"><span class="cat">Preservation</span><img src="images/bamyan-valley-wide.jpg" alt="Bamyan valley landscape"></div>
+          <div class="body"><h3 data-fa="آیا بوداها باید بازسازی شوند؟ نگاهی به مناقشه‌ای بیست‌ساله">Should the Buddhas Be Rebuilt? Inside a 20-Year Debate</h3><p data-fa="آناستیلوزیس، خلأِ گویا، و اخلاقِ بازسازی.">Anastylosis, the eloquent void, and the ethics of reconstruction.</p><div class="meta"><span data-fa="۱۱ دقیقه">11 min</span></div></div>
         </a>
       </div>
 
       <!-- Interactive timeline -->
       <div style="margin-top:60px">
-        <div class="section-head"><div><div class="bar"></div><h2>An Interactive Timeline of Bamyan</h2></div></div>
+        <div class="section-head"><div><div class="bar"></div><h2 data-fa="گاه‌شمار تعاملی بامیان">An Interactive Timeline of Bamyan</h2></div></div>
         <div class="timeline">
-          <div class="tl-item"><div class="yr">c. 250 BCE</div><h4>A Silk Road crossroads forms</h4><p>Bamyan grows into a trading and pilgrimage hub linking Persia, Central Asia and India.</p></div>
-          <div class="tl-item"><div class="yr">5th–7th c. CE</div><h4>The colossal Buddhas are carved</h4><p>Monks and craftsmen hew the two giant figures — 55m and 38m — into the sandstone cliff.</p></div>
-          <div class="tl-item"><div class="yr">c. 630 CE</div><h4>Xuanzang visits the valley</h4><p>The Chinese pilgrim records a thriving monastic community and a giant reclining Buddha.</p></div>
-          <div class="tl-item"><div class="yr">1221 CE</div><h4>Genghis Khan destroys Shahr-e Gholghola</h4><p>The Mongol siege gives the citadel its enduring name, the "City of Screams."</p></div>
-          <div class="tl-item"><div class="yr">March 2001</div><h4>The Buddhas are destroyed</h4><p>The statues are demolished with explosives, drawing global condemnation.</p></div>
-          <div class="tl-item"><div class="yr">2003</div><h4>UNESCO World Heritage inscription</h4><p>The valley is listed as World Heritage and simultaneously placed on the In-Danger list.</p></div>
-          <div class="tl-item"><div class="yr">2009</div><h4>Band-e-Amir becomes a national park</h4><p>Afghanistan designates its first national park around the valley's cobalt lakes.</p></div>
-          <div class="tl-item"><div class="yr">Today</div><h4>Heritage as a living practice</h4><p>A new generation documents, conserves and reimagines the valley's future.</p></div>
+          <div class="tl-item"><div class="yr" data-fa="حدود ۲۵۰ پ.م">c. 250 BCE</div><h4 data-fa="چهارراهی بر جاده‌ی ابریشم شکل می‌گیرد">A Silk Road crossroads forms</h4><p data-fa="بامیان به کانون تجارت و زیارت پیونددهنده‌ی پارس، آسیای میانه و هند بدل می‌شود.">Bamyan grows into a trading and pilgrimage hub linking Persia, Central Asia and India.</p></div>
+          <div class="tl-item"><div class="yr" data-fa="سده‌ی ۵ تا ۷ م">5th–7th c. CE</div><h4 data-fa="بوداهای غول‌پیکر تراشیده می‌شوند">The colossal Buddhas are carved</h4><p data-fa="راهبان و صنعتگران دو پیکر غول‌آسا — ۵۵ و ۳۸ متر — را در صخره‌ی ماسه‌سنگی می‌تراشند.">Monks and craftsmen hew the two giant figures — 55m and 38m — into the sandstone cliff.</p></div>
+          <div class="tl-item"><div class="yr" data-fa="حدود ۶۳۰ م">c. 630 CE</div><h4 data-fa="شوان‌زانگ از دره دیدن می‌کند">Xuanzang visits the valley</h4><p data-fa="زائر چینی از جامعه‌ای پررونق از راهبان و یک بودای خوابیده‌ی غول‌پیکر یاد می‌کند.">The Chinese pilgrim records a thriving monastic community and a giant reclining Buddha.</p></div>
+          <div class="tl-item"><div class="yr" data-fa="۱۲۲۱ م">1221 CE</div><h4 data-fa="چنگیزخان شهر غلغله را ویران می‌کند">Genghis Khan destroys Shahr-e Gholghola</h4><p data-fa="محاصره‌ی مغول‌ها نام ماندگار «شهر فریادها» را بر این دژ می‌نهد.">The Mongol siege gives the citadel its enduring name, the "City of Screams."</p></div>
+          <div class="tl-item"><div class="yr" data-fa="مارس ۲۰۰۱">March 2001</div><h4 data-fa="بوداها تخریب می‌شوند">The Buddhas are destroyed</h4><p data-fa="مجسمه‌ها با مواد منفجره ویران می‌شوند و محکومیت جهانی را برمی‌انگیزند.">The statues are demolished with explosives, drawing global condemnation.</p></div>
+          <div class="tl-item"><div class="yr" data-fa="۲۰۰۳">2003</div><h4 data-fa="ثبت در میراث جهانی یونسکو">UNESCO World Heritage inscription</h4><p data-fa="دره در فهرست میراث جهانی و هم‌زمان در فهرست در خطر ثبت می‌شود.">The valley is listed as World Heritage and simultaneously placed on the In-Danger list.</p></div>
+          <div class="tl-item"><div class="yr" data-fa="۲۰۰۹">2009</div><h4 data-fa="بند امیر پارک ملی می‌شود">Band-e-Amir becomes a national park</h4><p data-fa="افغانستان نخستین پارک ملی خود را پیرامون دریاچه‌های لاجوردی دره تعیین می‌کند.">Afghanistan designates its first national park around the valley's cobalt lakes.</p></div>
+          <div class="tl-item"><div class="yr" data-fa="امروز">Today</div><h4 data-fa="میراث به‌مثابه‌ی کرداری زنده">Heritage as a living practice</h4><p data-fa="نسلی نو آینده‌ی دره را مستند، حفظ و بازتصور می‌کند.">A new generation documents, conserves and reimagines the valley's future.</p></div>
         </div>
       </div>
     </div>
@@ -128,29 +128,29 @@
     <!-- sidebar -->
     <aside>
       <div class="sidebar-card">
-        <h3>Trending Now</h3>
+        <h3 data-fa="پرطرفدار اکنون">Trending Now</h3>
         <ul class="trending-list">
-          <li><a href="article.html"><div><h4>The Empty Niches of Bamyan</h4><div class="m">Heritage · 12 min</div></div></a></li>
-          <li><a href="article.html"><div><h4>Nowruz in the Highlands</h4><div class="m">Culture · 9 min</div></div></a></li>
-          <li><a href="article.html"><div><h4>The Dambura's Two Strings</h4><div class="m">Music · 7 min</div></div></a></li>
-          <li><a href="article.html"><div><h4>Mantu: The Dumpling at the Heart of Every Gathering</h4><div class="m">Food · 6 min</div></div></a></li>
-          <li><a href="article.html"><div><h4>Who Are the Hazara?</h4><div class="m">History · 14 min</div></div></a></li>
+          <li><a href="article.html"><div><h4 data-fa="نیچ‌های خالی بامیان">The Empty Niches of Bamyan</h4><div class="m" data-fa="میراث · ۱۲ دقیقه">Heritage · 12 min</div></div></a></li>
+          <li><a href="article.html"><div><h4 data-fa="نوروز در ارتفاعات">Nowruz in the Highlands</h4><div class="m" data-fa="فرهنگ · ۹ دقیقه">Culture · 9 min</div></div></a></li>
+          <li><a href="article.html"><div><h4 data-fa="دو تار دمبوره">The Dambura's Two Strings</h4><div class="m" data-fa="موسیقی · ۷ دقیقه">Music · 7 min</div></div></a></li>
+          <li><a href="article.html"><div><h4 data-fa="منتو: آشِ خمیریِ قلبِ هر گردهمایی">Mantu: The Dumpling at the Heart of Every Gathering</h4><div class="m" data-fa="غذا · ۶ دقیقه">Food · 6 min</div></div></a></li>
+          <li><a href="article.html"><div><h4 data-fa="هزاره‌ها کیستند؟">Who Are the Hazara?</h4><div class="m" data-fa="تاریخ · ۱۴ دقیقه">History · 14 min</div></div></a></li>
         </ul>
       </div>
 
       <div class="sidebar-card" style="background:linear-gradient(135deg,var(--turquoise-deep),var(--deep-blue));color:#fff;border:none">
-        <h3 style="color:#fff">Visiting Bamyan</h3>
-        <p style="color:#dbe6ec;font-size:15px">Key sites in the valley: the Buddha niches, Shahr-e Gholghola, Shahr-e Zohak ("Red City"), and the lakes of Band-e-Amir, a short drive west.</p>
+        <h3 style="color:#fff" data-fa="سفر به بامیان">Visiting Bamyan</h3>
+        <p style="color:#dbe6ec;font-size:15px" data-fa="مکان‌های کلیدی دره: نیچ‌های بودا، شهر غلغله، شهر ضحاک («شهر سرخ») و دریاچه‌های بند امیر در فاصله‌ای کوتاه به سمت غرب.">Key sites in the valley: the Buddha niches, Shahr-e Gholghola, Shahr-e Zohak ("Red City"), and the lakes of Band-e-Amir, a short drive west.</p>
       </div>
 
       <div class="sidebar-card">
-        <h3>Quick Facts</h3>
+        <h3 data-fa="حقایق کوتاه">Quick Facts</h3>
         <p style="font-size:15px;color:var(--text-soft)">
-          <strong>Elevation:</strong> ~2,500 m<br>
+          <span data-fa="ارتفاع: حدود ۲٬۵۰۰ متر — منطقه: هزارستان، مرکز افغانستان — بودای بزرگ‌تر: حدود ۵۵ متر — ثبت یونسکو: ۲۰۰۳ — پارک ملی: بند امیر، ۲۰۰۹"><strong>Elevation:</strong> ~2,500 m<br>
           <strong>Region:</strong> Hazarajat, central Afghanistan<br>
           <strong>Larger Buddha:</strong> ~55 m tall<br>
           <strong>UNESCO listing:</strong> 2003<br>
-          <strong>National park:</strong> Band-e-Amir, 2009
+          <strong>National park:</strong> Band-e-Amir, 2009</span>
         </p>
       </div>
     </aside>
@@ -160,11 +160,11 @@
 <!-- Newsletter -->
 <section class="block newsletter">
   <div class="wrap">
-    <h2>The Weekly Dispatch</h2>
-    <p>Long-form features, archive finds and cultural stories — delivered to your inbox every Friday.</p>
+    <h2 data-fa="خبرنامه‌ی هفتگی">The Weekly Dispatch</h2>
+    <p data-fa="مقاله‌های بلند، یافته‌های آرشیوی و داستان‌های فرهنگی — هر جمعه به صندوق ورودی شما.">Long-form features, archive finds and cultural stories — delivered to your inbox every Friday.</p>
     <form class="nl-form" onsubmit="return subscribe(event)">
-      <input type="email" placeholder="your@email.com" required aria-label="Email address">
-      <button type="submit">Subscribe</button>
+      <input type="email" placeholder="your@email.com" data-fa-ph="ایمیل شما" required aria-label="Email address">
+      <button type="submit" data-fa="عضویت">Subscribe</button>
     </form>
   </div>
 </section>
@@ -174,15 +174,15 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="name">Hazara Times</div>
-        <p>A digital magazine and cultural archive dedicated to preserving and celebrating the history, culture and heritage of the Hazara people.</p>
+        <p data-fa="مجله‌ای دیجیتال و آرشیوی فرهنگی، وقفِ حفظ و گرامیداشتِ تاریخ، فرهنگ و میراث مردم هزاره.">A digital magazine and cultural archive dedicated to preserving and celebrating the history, culture and heritage of the Hazara people.</p>
       </div>
-      <div><h4>Sections</h4><a href="history.html">History</a><br><a href="culture.html">Culture</a><br><a href="arts.html">Arts &amp; Literature</a><br><a href="music.html">Music</a></div>
-      <div><h4>More</h4><a href="food.html">Food &amp; Cuisine</a><br><a href="community.html">Community</a><br><a href="bamyan.html">Opinion</a><br><a href="#">Archive</a></div>
-      <div><h4>About</h4><a href="#">Our Mission</a><br><a href="#">Contributors</a><br><a href="#">Submit a Story</a><br><a href="#">Contact</a></div>
+      <div><h4 data-fa="بخش‌ها">Sections</h4><a href="history.html" data-fa="تاریخ">History</a><br><a href="culture.html" data-fa="فرهنگ">Culture</a><br><a href="arts.html" data-fa="هنر و ادبیات">Arts &amp; Literature</a><br><a href="music.html" data-fa="موسیقی">Music</a></div>
+      <div><h4 data-fa="بیشتر">More</h4><a href="food.html" data-fa="غذا و آشپزی">Food &amp; Cuisine</a><br><a href="community.html" data-fa="جامعه">Community</a><br><a href="bamyan.html" data-fa="دیدگاه">Opinion</a><br><a href="#" data-fa="آرشیو">Archive</a></div>
+      <div><h4 data-fa="درباره">About</h4><a href="#" data-fa="مأموریت ما">Our Mission</a><br><a href="#" data-fa="نویسندگان">Contributors</a><br><a href="#" data-fa="ارسال داستان">Submit a Story</a><br><a href="#" data-fa="تماس">Contact</a></div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Hazara Times. A cultural preservation initiative.</span>
-      <span>Made with care for heritage and history.</span>
+      <span data-fa="© ۲۰۲۶ هزاره تایمز. ابتکاری برای حفظ فرهنگ.">© 2026 Hazara Times. A cultural preservation initiative.</span>
+      <span data-fa="ساخته‌شده با مهر برای میراث و تاریخ.">Made with care for heritage and history.</span>
     </div>
   </div>
 </footer>
